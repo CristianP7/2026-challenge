@@ -4,7 +4,6 @@ let sprite = document.getElementById('sprite')
 let borrar = document.getElementById('borrar')
 let producto = document.getElementById('producto')
 
-
 function seleccionarCocacola (){
     producto.innerHTML = 'Coca-Cola'
 }
@@ -20,8 +19,6 @@ function seleccionarSprite (){
 function borrarSeleccion (){
     producto.innerHTML = ''
 }
-
-
 
 cocacola.addEventListener('click',seleccionarCocacola)
 pepsi.addEventListener('click', seleccionarPepsi)
