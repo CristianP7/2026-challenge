@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#button{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    padding: 12px 18px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
