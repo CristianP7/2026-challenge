@@ -1,18 +1,27 @@
-let btn =  document.getElementById('btn')
+let btn = document.getElementById('btn')
+let contador = document.getElementById('number')
 let reset = document.getElementById('reset')
-let number = document.getElementById('number')
 
-let click = 0
+let clicks = localStorage.getItem('clicks')
 
+if (clicks === null) {
+    clicks = 0
+} else {
+    clicks = parseInt(clicks)
+}
 
-function iniciarContador (){
-    click++
-    number.textContent = click
+contador.textContent = clicks
+
+function iniciarContador () {
+    clicks++
+    contador.textContent = clicks
+    localStorage.setItem('clicks', clicks)
+}
+
+function reiniciarContador (){
+    clicks = 0
+    contador.textContent = clicks
 }
 
 btn.addEventListener('click', iniciarContador)
-
-reset.addEventListener('click', () =>{
-    click = 0
-    number.textContent = click
-})
+reset.addEventListener('click', reiniciarContador)
