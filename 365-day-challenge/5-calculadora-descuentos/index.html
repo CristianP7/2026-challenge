@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <div class="container">
         <section class="hero">
             <figure>
                 <img src="" alt="calculadora-porcentaje-logo">
             </figure>
 
-         <h1 class="title">Calculadora de Porcentajes</h1>  
+         <h1 class="title">Calculadora de <span class="text-color">Porcentajes</span></h1>  
          
          <p class="text">Calcula descuentos, márgenes de ganancia y cambios porcentuales de tus productos de forma rápida y sencilla.</p>
         </section>
 
         <section class="cards__container">
-            <article class="card__container">
+            <article class="card">
+                
+                <div class="card__header">
                 <figure class="card__picture">
                     <img src="/" alt="descuento-logo">
                 </figure>
@@ -28,17 +31,20 @@
                     <h2 class="card__title">Descuento</h2>
                     <p class="card__text">Calcula el precio final después de aplicar un descuento.</p>
                 </div>  
+
+            </div>    
                 
                 <form class="card__form">
                     <label for="originalPrice" class="card__text">Precio Original</label>
-                    <input id="originalPrice" type="number" class="card__input" >
+                    <input placeholder="  Ejemplo: 100" id="originalPrice" type="number" class="card__input" >
 
-                    <label for="discountPercentage" class="card__text">Precio Original</label>
-                    <input id="discountPercentage" type="number" class="card__input" >
+                    <label for="discountPercentage" class="card__text">Porcentaje de descuento</label>
+                    <input placeholder="  Ejemplo: 20" id="discountPercentage" type="number" class="card__input" >
 
                     <div class="card__buttons">
                         <input class="card__button" type="button" value="Calcular">
-                        <input class="card__button--color" type="button" value="Borrar">
+                        
+                        <input class="card__button--clear" type="button" value="Borrar">
                     </div>
                 </form>
             </article>
