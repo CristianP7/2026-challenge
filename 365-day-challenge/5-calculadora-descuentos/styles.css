@@ -109,12 +109,12 @@ label {
 }
 
 .card__input{
-    text-align: left;
     margin-bottom: 10px;
     height: 45px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.204);
     font-size: 1rem;
+    padding-left: 15px;
 }
 
 .card__input:focus{
