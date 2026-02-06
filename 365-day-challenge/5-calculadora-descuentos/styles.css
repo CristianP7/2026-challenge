@@ -1,0 +1,35 @@
+:root{
+    --primary: hsl(174, 72%, 40%);
+    --primary-foreground: hsl(0, 0%, 100%);
+
+  /* Background & text */
+    --background: hsl(210, 20%, 98%);
+    --foreground: hsl(220, 20%, 10%);
+
+  /* States */
+    --success: hsl(142, 70%, 45%);
+    --warning: hsl(38, 92%, 50%);
+    --destructive: hsl(0, 84%, 60%);
+
+  /* UI helpers */
+    --muted: hsl(210, 15%, 93%);
+    --accent: hsl(174, 60%, 95%);
+
+  /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 72% 40%), hsl(180 70% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(174 60% 97%) 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+}
