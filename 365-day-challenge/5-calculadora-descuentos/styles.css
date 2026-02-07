@@ -138,6 +138,7 @@ label {
     font-weight: 600;
     border-radius: 10px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .card__button--clear{
@@ -147,7 +148,8 @@ label {
     background-image: var(--gradient-hero);
     font-weight: 600;
     border-radius: 10px;
-}
+    cursor: pointer;
+}   
 
 .card__result{
     margin-top: 20px;
