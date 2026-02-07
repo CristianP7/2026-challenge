@@ -11,11 +11,11 @@ btn.addEventListener('click', calculateDiscount)
 remove.addEventListener('click', deleteSelection)
 
 function calculateDiscount(){
-    let discount = (originalPrice.value) * (discountPercentage.value) / 100
-    let finalPrice = (originalPrice.value) - discount
+    let discount = Number(originalPrice.value) * Number(discountPercentage.value) / 100
+    let finalPrice = Number(originalPrice.value) - discount
 
-    save.innerHTML = discount
-    price.innerHTML = finalPrice
+    save.innerHTML = discount.toFixed(3)
+    price.innerHTML = finalPrice.toFixed(3)
 }
 
 function deleteSelection(){
