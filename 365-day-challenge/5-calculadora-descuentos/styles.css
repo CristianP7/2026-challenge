@@ -147,8 +147,24 @@ label {
     background-image: var(--gradient-hero);
     font-weight: 600;
     border-radius: 10px;
-
 }
 
+.card__result{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(29, 175, 160, 0.275);
+    outline: 1px solid rgba(4, 114, 103, 0.211);
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+}
+
+.card__text{
+    margin-bottom: 10px;
+}
+
+.card__price{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 
