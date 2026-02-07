@@ -42,13 +42,13 @@
                     <input placeholder="Ejemplo: 20" id="discountPercentage" type="number" class="card__input" >
 
                     <div class="card__buttons">
-                        <input class="card__button" type="button" value="Calcular">
+                        <input id="btn" class="card__button" type="button" value="Calcular">
 
-                        <input class="card__button--clear" type="button" value="Borrar">
+                        <input id="remove" class="card__button--clear" type="button" value="Borrar">
                     </div>
 
                     <div class="card__result">
-                        <p class="card__text">Precio final (ahorras <span id="save">$</span>)</p>
+                        <p class="card__text">Precio final (ahorras $<span id="save"></span>)</p>
                         <p class="card__price">$ <span class="card__price" id="price"></span></p>
                         
                     </div>
