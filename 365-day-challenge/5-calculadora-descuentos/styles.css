@@ -88,7 +88,9 @@ body{
 
 .card__header{
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 30px;
 
 }
 
@@ -143,15 +145,26 @@ label {
     cursor: pointer;
 }
 
+.card__button:hover{
+    opacity: .9;
+}
+
 .card__button--clear{
     width: 100px;
     height: 40px;
     border: 1px solid #0000005c;
-    background-image: var(--gradient-hero);
+    background-color: var(--primary-foreground);
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
 }   
+
+.card__button--clear:hover{
+    background-image: var(--gradient-primary);
+    color: white;
+    opacity: .9;
+}
+
 
 .card__result{
     margin-top: 20px;
@@ -164,6 +177,7 @@ label {
 
 .card__text{
     margin-bottom: 10px;
+    width: 200px;
 }
 
 .card__price{
@@ -186,4 +200,20 @@ label {
     color: rgba(2, 79, 71, 0.838);
     text-decoration: underline;
     font-weight: 600;
+}
+
+.card__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__picture{
+    background-color: rgba(29, 175, 160, 0.275);
+    width: 90px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
