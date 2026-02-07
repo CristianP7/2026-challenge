@@ -174,3 +174,16 @@ label {
 #save{
     font-weight: 600;
 }
+
+.legend{
+    margin-top: 15px;
+    text-align: center;
+    color: var(--foreground);
+}
+
+.legend__author{
+    font-size: 1rem;
+    color: rgba(2, 79, 71, 0.838);
+    text-decoration: underline;
+    font-weight: 600;
+}
