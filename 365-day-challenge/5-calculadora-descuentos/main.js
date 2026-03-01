@@ -20,4 +20,4 @@ function calculateDiscount(){
 
 function deleteSelection(){
     location.reload()
-}
+};
